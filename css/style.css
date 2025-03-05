@@ -22,7 +22,12 @@ header {
 }
 
 #nav {
+    max-width: 1200px;
     border-bottom: 1px solid seashell;
+}
+
+#nav, main {
+    max-width: 1200px;
 }
 
 #logo {
@@ -31,18 +36,25 @@ header {
 
 
 /* Main Section */
-#featuredTea {
-    max-width: 1000px;
+#mission {
+    background-color: darkorange;
 }
 
-.teas, .locationCards {
+#featuredTea {
+    max-width: 1000px;
+    background-color: darkorange;
+}
+
+.teaCards, .locationCards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+
 }
 
 .card {
     width: 300px;
+    background-color: darkblue;
 }
 
 .card img {
@@ -50,8 +62,13 @@ header {
     width: auto; 
 }
 
+#contact {
+    height: 200px;
+    background-color: darkorange;
+}
+
 
 /* Footer Section */
 footer {
-
+    background-color: darkorange;
 }
