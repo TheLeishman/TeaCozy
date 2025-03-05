@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+html, body {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+
+/* Sizing */
+.container, .header, .footer {
+    margin: 0 auto;
+}
+
+
+/* Header Section */
+header {
+    
+}
+
+#nav {
+    border-bottom: 1px solid seashell;
+}
+
+#logo {
+    height: 50px;
+}
+
+
+/* Main Section */
+#featuredTea {
+    max-width: 1000px;
+}
+
+.teas, .locationCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+}
+
+.card img {
+    height: 200px;
+    width: auto; 
+}
+
+
+/* Footer Section */
+footer {
+
+}
