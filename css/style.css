@@ -1,6 +1,12 @@
 @charset "UTF-8";
 
 html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     font-family: Helvetica;
     font-size: 22px;
     color: seashell;
@@ -9,66 +15,71 @@ html, body {
     text-align: center;
 }
 
-
-/* Sizing */
-.container, .header, .footer {
-    margin: 0 auto;
-}
-
-
 /* Header Section */
-header {
-    
+header, footer {
+    width: 100%;
+    text-align: center;
 }
 
-#nav {
-    max-width: 1200px;
+header {
     border-bottom: 1px solid seashell;
 }
 
-#nav, main {
-    max-width: 1200px;
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 69px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 
 #logo {
     height: 50px;
 }
 
+#nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
 
-/* Main Section */
-#mission {
-    background-color: darkorange;
+#nav li {
+    list-style: none;
+    margin-left: 40px; /* Optional: add some space between the list items */
+}
+
+#nav a {
+    color: seashell;
+    text-decoration: none;
+}
+
+#banner, #locations, #contact {
+    width: 1200px;
 }
 
 #featuredTea {
-    max-width: 1000px;
-    background-color: darkorange;
+    width: 1000px;
+    text-align: center;
 }
 
-.teaCards, .locationCards {
+#banner {
+    height: 700px;
+    background-image: url('/images/img-mission-background.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
+    align-items: center;
+    justify-content: center;
 }
 
-.card {
-    width: 300px;
-    background-color: darkblue;
-}
-
-.card img {
-    height: 200px;
-    width: auto; 
-}
-
-#contact {
-    height: 200px;
-    background-color: darkorange;
-}
-
-
-/* Footer Section */
-footer {
-    background-color: darkorange;
+#locations {
+    height: 500px;
+    background-image: url('../images/img-locations-background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
