@@ -11,7 +11,7 @@ html, body {
     font-size: 22px;
     color: seashell;
     background-color: black;
-    opacity: 0.9;
+    
     text-align: center;
     box-sizing: border-box;
 }
@@ -99,22 +99,21 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Adds consistent spacing between items */
     padding: 0 10px;
     box-sizing: border-box;
 }
 
 .tea-items div {
-    flex: 1 1 calc(33.333% - 40px); /* Makes items flexible and allows 3 per row */
+    flex: 1 1 calc(33.333% - 40px);
     max-width: 300px;
-    min-width: 200px; /* Ensures they don’t get too small */
+    min-width: 200px;
     text-align: center;
 }
 
 .tea-items div img {
     width: 100%;
     height: auto;
-    max-width: 250px; /* Prevents them from getting too large */
+    max-width: 250px;/
 }
 
 .tea-items div h4 {
@@ -133,24 +132,27 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 100px 20px;
+
     box-sizing: border-box;
-    padding: 0px;
+    overflow: auto;
 }
 
 .location-boxes {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Allows wrapping for responsive layout */
-    gap: 20px;
+    flex-wrap: wrap;
+    opacity: 0.96;
+    padding: 10px 20px 0px;
 }
 
 .location-box {
     background-color: black;
     width: 300px;
+    height: 300px;
     margin: 20px;
     padding: 20px;
     box-sizing: border-box;
+    opacity: 1;
 }
 
 /* Contact Section */
@@ -169,5 +171,6 @@ footer {
 }
 
  #copyright {
-    padding: 20px;
+    padding: 0px 20px;
+    margin: 0px;
 }
