@@ -13,7 +13,6 @@ html, body {
     background-color: black;
     opacity: 0.9;
     text-align: center;
-    box-sizing: border-box;
 }
 
 /* Header Section */
@@ -62,70 +61,42 @@ header {
 /* Banner Section */
 #banner {
     height: 700px;
-    width: 100%;
-    max-width: 1200px;
+    width: 1200px;
     background-image: url('../images/img-mission-background.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 69px;
 }
 
 .mission-content {
     background-color: black;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.mission-content h2, .mission-content h4 {
-    margin: 0;
+    padding: 20px;
+    width: 1000px;
 }
 
 /* Featured Tea Section */
 #featuredTea {
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px;
+    width: 1000px;
     text-align: center;
+    padding: 50px 0;
 }
 
 .tea-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Adds consistent spacing between items */
-    padding: 0 10px;
-    box-sizing: border-box;
 }
 
 .tea-items div {
-    flex: 1 1 calc(33.333% - 40px); /* Makes items flexible and allows 3 per row */
-    max-width: 300px;
-    min-width: 200px; /* Ensures they don’t get too small */
-    text-align: center;
-}
-
-.tea-items div img {
-    width: 100%;
-    height: auto;
-    max-width: 250px; /* Prevents them from getting too large */
-}
-
-.tea-items div h4 {
-    margin-top: 20px;
+    margin: 10px;
 }
 
 /* Locations Section */
 #locations {
     height: 500px;
-    width: 100%;
-    max-width: 1200px;
+    width: 1200px;
     background-image: url('../images/img-locations-background.jpg');
     background-size: cover;
     background-position: center;
@@ -133,41 +104,34 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 100px 20px;
-    box-sizing: border-box;
-    padding: 0px;
+    padding: 100px 0;
 }
 
 .location-boxes {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Allows wrapping for responsive layout */
-    gap: 20px;
 }
 
 .location-box {
     background-color: black;
     width: 300px;
-    margin: 20px;
+    margin: 40px;
     padding: 20px;
-    box-sizing: border-box;
 }
 
 /* Contact Section */
 #contact {
-    width: 100%;
-    max-width: 1200px;
-    padding: 50px 20px;
-    box-sizing: border-box;
+    width: 1200px;
+    padding: 50px 0;
 }
 
 /* Footer */
 footer {
     width: 100%;
     text-align: left;
-    padding: 20px;
 }
 
  #copyright {
     padding: 20px;
 }
+
